@@ -1,15 +1,13 @@
-#include <wiringPi.h>
+#include "led_flash.h"
 
-#define DS   6
-#define SHCP 19
-#define STCP 13
-
-int main(void)
+Ret led_gpio_init(void)
 {
-	if(-1 == wiringPiSetup();)
-	{
-		
-	}
+	return_val_if_fail(-1 != wiringPiSetup(), RET_FAIL);
+	return RET_OK;
 }
+
+Ret led_ctr_init()
+
+
 
 
